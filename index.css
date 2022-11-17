@@ -1,0 +1,798 @@
+@font-face {
+  font-family: "Philosopher-Regular";
+  src: url("./fonts/Philosopher-Regular.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("./fonts/Roboto-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("./fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+:root{
+    --color-text:   #150C01;
+    --bac-col: #DC780B ;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+:root{
+    --p-color: color: #150C01;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+header {
+  margin-top: 31px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* .header-logo {
+} */
+nav {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  gap: 41px;
+  margin-right: 450px;
+}
+.nav-item {
+  font-family: "Roboto-Regular";
+  src: url("./fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.2s;
+  color: var(--color-text);
+}
+.nav-item:hover {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  border-bottom: 2px solid var(--bac-col);
+  color: var(--bac-col);
+}
+.nav-item:active {
+  color: rgb(57, 7, 172);
+  border-bottom: 2px solid rgb(57, 7, 172);
+}
+.nav-btn {
+  width: 155px;
+  height: 46px;
+  border: none;
+  background: #dc780b;
+  border-radius: 5px;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  transition: 0.2s;
+}
+.nav-btn:hover {
+  color: rgb(0, 0, 0);
+  background-color: brown;
+  cursor: pointer;
+  
+}
+.nav-btn:active{
+    transition: 0.2s;
+    color: rgb(255, 255, 255);
+    background-color: rgb(125, 173, 13);
+}
+.hero {
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    /* margin-top: 174px; */
+  width: 555px;
+  font-family: "Philosopher-Regular";
+  src: url("./fonts/Philosopher-Regular.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48.83px;
+  line-height: 58px;
+
+  color: var(--color-text);
+}
+.hero-p {
+   margin-bottom: 50px;
+  width: 555px;
+  font-family: "Roboto-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--p-text);
+}
+.hero-btn {
+  width: 158px;
+margin-right: 30px;
+  height: 60px;
+  left: 150px;
+  top: 532px;
+  border: none;
+  background: #dc780b;
+  border-radius: 5px;
+  color: white;
+  transition: 0.2s;
+}
+.hero-btn:hover {
+  background-color: brown;
+  color: black;
+  cursor: pointer;
+}
+.hero-btn:active{
+    transition: 0.2s;
+    color: rgb(255, 255, 255);
+    background-color: rgb(125, 173, 13);
+}
+.hero-btntwo {
+    width: 170px;
+height: 60px;
+border: 1.5px solid #DC780B;
+border-radius: 5px;
+color: #DC780B;
+transition: 0.2s;
+cursor: pointer;
+}
+.hero-btntwo:hover{
+    background-color: brown;
+    color: black;
+}
+.hero-btntwo:active{ 
+     transition: 0.2s;
+    color: rgb(255, 255, 255);
+    background-color: rgb(125, 173, 13);
+}
+.hero-right{
+
+    width: 801px;
+    height:670px;
+    background-image: url('./img/head.jpg');
+    margin-right: -23px;
+ 
+}
+
+
+/* .card {
+    /* display: flex; */
+/* justify-content: space-between; */
+ */
+.card-features{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+
+text-align: center;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+
+color: #DC780B;
+}
+.card-food{
+  margin-top: 7px;
+  font-family: "Philosopher-Regular";
+  src: url("./fonts/Philosopher-Regular.ttf");
+  font-weight: 700;
+  font-style: normal;
+font-size: 31.25px;
+line-height: 35px;
+color: var(--color-text);
+text-transform: capitalize;
+text-align: center;
+}
+.card-li{
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo-group{
+width:88px ;
+height:88px ;
+background-color:#8fa63213 ;
+border-radius: 50%;
+margin-left: 108px;
+margin-top: 44px;
+}
+.card-logo{
+width: 44.95px;
+height: 44.46px;
+margin-top: 18px;
+margin-left: 23px;
+}
+.card-h3{
+  font-size: 25px;
+line-height: 24px;
+text-align: center;
+margin-top: 33px;
+font-family: "Philosopher-Regular";
+src: url("./fonts/Philosopher-Regular.ttf");
+font-weight: 700;
+font-style: normal;
+
+}
+.card-p{
+  width: 300px;
+  margin-top: 15px;
+  color: var(--color-text);
+  font-family: "Roboto-Regular";
+  src: url("./fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 16px;
+line-height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+.logo-Delivery{
+    width:88px ;
+height:88px ;
+background: #dc770b0c;
+border-radius: 50%;
+margin-left:108px ;
+margin-top: 44px;
+}
+.card-logo2{
+    width: 44.95px;
+    height: 44.46px;
+    margin-top: 18px;
+    margin-left: 23px;
+  
+}
+
+
+
+
+
+
+
+
+
+.logo-Taste{
+  margin-top: 44px;
+  margin-left: 108px;
+    width:88px ;
+height:88px ;
+background-color:#8fa6321f ;
+border-radius: 50%;
+}
+.card-logo3{
+    width: 44.95px;
+height: 44.46px;
+margin-top: 18px;
+margin-left: 23px;
+}
+
+.about-us{
+display: flex;
+}
+.bac-col{
+  width: 957px;
+height: 801px;
+
+  background-image: url(./img/Vector\ 3\ \(1\).png);
+  background-repeat: no-repeat;
+  background-position: left 100%;
+}
+.about-usleft{
+margin-top: 216px;
+margin-left: 90px;
+}
+.bac-col img{
+  padding-top: 108px;
+  border-radius: 35px;
+
+
+}
+
+.about-h4{
+  
+  font-family: "Roboto-Medium";
+  src: url("./fonts/Roboto-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+display: flex;
+align-items: center;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+
+color: #DC780B;
+}
+.about-h2{
+  margin-bottom: 30px;
+  font-size: 31.25px;
+line-height: 41px;
+font-family: "Philosopher-Regular";
+src: url("./fonts/Philosopher-Regular.ttf");
+font-weight: 700;
+font-style: normal;
+color: var(--color-text);
+}
+.about-p{
+  font-family: "Roboto-Regular";
+  src: url("./fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-text);
+  font-size: 16px;
+line-height: 24px;
+}
+.about-btn{
+  color: white;
+  line-height: 19px;
+  background-color: var(--bac-col);
+  border-radius: 5px;
+  border: none;
+  width: 142px;
+height: 42px;
+margin-top: 29px;
+
+}
+.about-btn:hover{
+  color: rgb(0, 0, 0);
+  background-color: brown;
+  cursor: pointer;
+}
+.about-btn:active{
+  transition: 0.2s;
+  color: rgb(255, 255, 255);
+  background-color: rgb(125, 173, 13);
+}
+
+.menu-h4{
+font-size: 16px;
+line-height: 24px;
+align-items: center;
+text-align: center;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(--bac-col);
+font-family: "Roboto-Medium";
+src: url("./fonts/Roboto-Medium.ttf");
+font-weight: 500;
+font-style: normal;
+}
+.menu-h2{
+  margin-top: 9px;
+  margin-bottom: 25px;
+color: var(--color-text);
+font-size: 31.25px;
+line-height: 24px;
+text-align: center;
+align-items: center;
+font-family: "Philosopher-Regular";
+src: url("./fonts/Philosopher-Regular.ttf");
+font-weight: 700;
+font-style: normal;
+}
+.menu-p{
+color: #150C01;
+font-family: "Roboto-Regular";
+src: url("./fonts/Roboto-Regular.ttf");
+font-weight: 400;
+font-style: normal;
+width: 748px;
+margin-left: 347px;
+color: var(--color-text);
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+align-items: center;
+margin-left: 195px;
+}
+.menu-one{
+  display: flex;
+  margin-top: 50px;
+justify-content: space-between;
+}
+
+.menu-one img{
+  border-radius: 73px 10px 73px 0px
+}
+.menu-text{
+  font-family: "Philosopher-Regular";
+  src: url("./fonts/Philosopher-Regular.ttf");
+  font-weight: 700;
+  font-style: normal;
+font-size: 25px;
+line-height: 24px;
+display: flex;
+align-items: center;
+color: #150C01;
+margin-top: 10px;
+}
+.menu-one h3{
+  display: flex;
+ align-items: center;
+}
+
+.Menu button {
+  width: 36px;
+  height: 34px;
+  border: none;
+  background: #dc780b;
+  border-radius: 5px;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  transition: 0.2s;
+  margin-left: 25px;
+  margin-top: 20px;
+  margin-right: 170px;
+  margin-bottom: 20px;
+}
+.Menu button:hover {
+  color: rgb(0, 0, 0);
+  background-color: brown;
+  cursor: pointer;
+  
+}
+.Menu button:active{
+    transition: 0.2s;
+    color: rgb(255, 255, 255);
+    background-color: rgb(125, 173, 13); 
+  }
+
+.litle-div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+    .litle-divs{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.litle-divss{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu-par{
+  width: 310px;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+margin-left: 25px;
+margin-top: 20px;
+display: flex;
+align-items: center;
+}
+.card{
+  background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 75px 10px 10px 10px;
+}
+.button-learn{
+  width: 142px;
+height: 42px;
+border: none;
+border-radius: 5px;
+color: var(--bac-col);
+margin-left: 527px;
+margin-top: 50px;
+transition: 0.3s;
+margin-bottom: 187px;
+}
+.button-learn:hover {
+  color: rgb(0, 0, 0);
+  background-color: brown;
+  cursor: pointer;
+  
+}
+.button-learn:active{
+    transition: 0.2s;
+    color: rgb(255, 255, 255);
+    background-color: rgb(125, 173, 13); 
+  }
+  .take{
+display: flex;
+  }
+  .take-text{
+padding-top: 114px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 78px;
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    
+    color: var(--bac-col);
+    font-family: "Roboto-Medium";
+    src: url("./fonts/Roboto-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+  }
+  .take-h2{
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 41px;
+    width: 555px;
+    margin-bottom: 29px;
+    
+    color: #150C01;
+  }
+  .take-p{
+width: 555px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    margin-bottom: 39px;
+    font-family: "Roboto-Regular";
+    src: url("./fonts/Roboto-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+    color: #150C01;
+  }
+  .baccol{
+    width:100%;
+/* height: 518px; */
+background: #fbf1e76e;
+
+padding-left: 100px;
+  }
+  .take-btn{
+    width: 163px;
+    height: 48px;
+    color: white;
+    background: #150C01;
+    border-radius: 5px;
+  align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .take-btn:hover {
+    color: rgb(0, 0, 0);
+    background-color: brown;
+    cursor: pointer;
+    border: none;
+  }
+  .take-btn:active{
+      transition: 0.2s;
+      color: rgb(255, 255, 255);
+      background-color: rgb(125, 173, 13);
+
+    }
+
+  .take-btn2{
+    width: 179px;
+    height: 48px;
+    left: 440px;
+    top: 3635px;
+    margin-left: 30px;
+  
+    border: 1.5px solid #150C01;
+    border-radius: 5px;
+  }
+  .take-btn2:hover {
+    color: rgb(0, 0, 0);
+    background-color: brown;
+    cursor: pointer;
+    border: none;
+  }
+  .take-btn2:active{
+      transition: 0.2s;
+      color: rgb(255, 255, 255);
+      background-color: rgb(125, 173, 13);
+       
+    }
+  .TESTIMONIAL{
+    margin: 0 auto;
+  }
+  .TESTIMONIAL-text{
+
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+margin-top: 213px;
+
+letter-spacing: 0.2em;
+text-transform: uppercase;
+
+color: #DC780B;
+font-family: "Roboto-Medium";
+src: url("./fonts/Roboto-Medium.ttf");
+font-weight: 500;
+font-style: normal
+  }
+  .TESTIMONIAL-h2{
+    
+
+font-size: 31.25px;
+line-height: 24px;
+/* identical to box height, or 77% */
+
+margin-top: 12px;
+margin-bottom: 23px;
+align-items: center;
+
+color: #000000;
+font-family: "Philosopher-Regular";
+src: url("./fonts/Philosopher-Regular.ttf");
+font-weight: 700;
+font-style: normal;
+  }
+  .TESTIMONIAL-p{
+    width: 750px;
+margin-bottom: 73px;
+color: #000000;
+font-family: "Roboto-Regular";
+  src: url("./fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  }
+  .tes-h5{
+    width: 506px;
+font-size: 16px;
+margin-bottom: 68px;
+margin-top: 41px;
+line-height: 24px;
+font-family: "Roboto-Regular";
+  src: url("./fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+color: #000000;
+  }
+  .tess-h5{
+    margin-top: 32px;
+    margin-bottom: 120px;
+  }
+  .contact{
+    
+    background: #fbf1e76e;
+  }
+  .contact1{
+    padding-top: 115px;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--bac-col);
+    font-family: "Roboto-Medium";
+    src: url(./fonts/Roboto-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+    color: var(--bac-col);
+  }
+  .contact-text{
+    font-family: "Philosopher-Regular";
+    src: url("./fonts/Philosopher-Regular.ttf");
+    font-weight: 700;
+    font-style: normal;
+    font-size: 31.25px;
+    line-height: 41px;
+   margin-left: 200px;
+    width: 749px;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    margin-bottom: 46px;
+    color: #150C01;
+  }
+  input{
+    width: 750px;
+height: 75px;
+display: block;
+margin: 0 auto;
+border-radius: 10px;
+  }
+  .inp-btn{
+    display: flex;
+    /* justify-content: center; */
+    width: 156px;
+height: 75px;
+
+border: none;
+background: #DC780B;
+border-radius: 10px;
+color: white;
+font-size: 18px;
+line-height: 41px;
+
+padding-left: 57px;
+display: flex;
+align-items: center;
+text-align: center;
+transition: 0.2s;
+color: #FFFFFF;
+  }
+  .inp-btn:hover {
+    color: rgb(0, 0, 0);
+    background-color: brown;
+    cursor: pointer;
+    border: none;
+  }
+  .inp-btn:active{
+      transition: 0.2s;
+      color: rgb(255, 255, 255);
+      background-color: rgb(125, 173, 13);
+       
+    }
+  .btn-inp{
+display: flex;
+ padding-bottom: 117px;
+  }
+footer{
+ 
+  align-items: center;
+  display: flex;
+  padding: 137px 301px 104px 150px;
+  width: 100%;
+height: 429px;
+background: #252525;
+gap: 100px;
+}
+
+.foter-div{
+ 
+  font-size: 14px;
+line-height: 16px;
+
+color: #ffffff50;
+}
+
+.fotter-ul li{
+margin-top: 26px;
+ 
+}
+ul a{
+  color: white;
+  transition: 0.3s;
+}
+ul a:hover{
+  margin-bottom: 26px;
+  color: #DC780B;
+}
+ul a :active{
+  color: aqua;
+}
